@@ -1,0 +1,117 @@
+<Tab name="ESP" padding="4 4 4 4">
+    <Box padding="12 6 6 6" width="content" height="content" name="ESP">
+        <List width="150">
+            <AutoVariable width="fill" target="esp.enable" label="Enable ESP"
+                          tooltip="Enable extrasensory perception. This shows important information about game entities."/>
+            <AutoVariable width="fill" target="esp.legit" label="Legit mode"
+                          tooltip="Dont show ESP of enemies behind walls"/>
+            <AutoVariable width="fill" target="esp.range" label="Max range"/>
+            <AutoVariable width="fill" target="lightesp.enable" label="Enable light ESP"
+                          tooltip="Show a red and green dot on the heads of enemies."/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Targets" y="65">
+        <List width="150">
+            <AutoVariable width="fill" target="esp.show.teammates" label="Ally ESP" tooltip="Shows ESP on teammates."/>
+            <AutoVariable width="fill" target="esp.show.local" label="Local ESP" tooltip="Shows ESP on yourself."/>
+            <AutoVariable width="fill" target="esp.show.buildings" label="Building ESP"/>
+            <AutoVariable width="fill" target="esp.show.team-buildings" label="Ally building ESP"/>
+            <AutoVariable width="fill" target="esp.show.npc" label="NPC ESP"/>
+        </List>
+        <Box padding="12 6 6 6" width="content" height="content" name="Item ESP" y="76">
+            <List width="137">
+                <AutoVariable width="fill" target="esp.item.enable" label="Enable"
+                              tooltip="Master switch for all below items."/>
+                <AutoVariable width="fill" target="esp.item.health" label="Health packs"/>
+                <AutoVariable width="fill" target="esp.item.ammo" label="Ammo packs"/>
+                <AutoVariable width="fill" target="esp.item.money" label="MvM money"
+                              tooltip="MvM money that needs to be picked up."/>
+                <AutoVariable width="fill" target="esp.item.powerup" label="Powerup"/>
+                <AutoVariable width="fill" target="esp.item.spellbook" label="Spellbook"/>
+                <AutoVariable width="fill" target="esp.item.objectives" label="Objective"
+                              tooltip="Intel, carts and mvm bombs."/>
+                <AutoVariable width="fill" target="esp.item.explosive" label="Explosive"
+                              tooltip="Environmental hazards like bombs."/>
+                <AutoVariable width="fill" target="esp.item.crumpkin" label="Crumpkin"
+                              tooltip="Ammo box that also gives crits."/>
+                <AutoVariable width="fill" target="esp.item.gargoyle" label="Gargoyle"
+                              tooltip="Soul gargoyle pickup on halloween maps."/>
+            </List>
+        </Box>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Projectiles" x="165">
+        <List width="150">
+            <AutoVariable width="fill" target="esp.projectile.enable" label="Enable projectile ESP"
+                          tooltip="Master switch for projectile ESP."/>
+            <AutoVariable width="fill" target="esp.projectile.enemy-only" label="Only enemy projectiles"/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="ESP settings" x="165" y="50">
+        <List width="150">
+            <AutoVariable width="fill" target="esp.box.player-3d" label="3D players"
+                          tooltip="Overrides setting for 'Box mode'."/>
+            <AutoVariable width="fill" target="esp.box.building-3d" label="3D buildings"/>
+            <AutoVariable width="fill" target="esp.box.corner-size" label="Corner size"/>
+            <AutoVariable width="fill" target="esp.bones" label="Bone ESP"/>
+            <AutoVariable width="fill" target="esp.bones.thickness" label="Bone thickness" min="0.1" max="5"
+                          step="0.1"/>
+            <AutoVariable width="fill" target="esp.bones.color" label="Bone color"
+                          tooltip="Colors bones according to player state."/>
+            <LabeledObject width="fill" label="Sightlines" tooltip="Shows where players are looking.">
+                <Select target="esp.sightlines">
+                    <Option name="Off" value="0"/>
+                    <Option name="Snipers only" value="1"/>
+                    <Option name="All" value="2"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="esp.expand" label="Expand" tooltip="Make ESP larger or smaller."/>
+            <LabeledObject width="fill" label="Text position">
+                <Select target="esp.text-position">
+                    <Option name="Top right" value="0"/>
+                    <Option name="Bottom right" value="1"/>
+                    <Option name="Above Center" value="3"/>
+                    <Option name="Above Left" value="5"/>
+                    <Option name="Above Right" value="6"/>
+                    <Option name="Center" value="2"/>
+                    <Option name="Below" value="4"/>
+                </Select>
+            </LabeledObject>
+            <LabeledObject width="fill" label="Box mode">
+                <Select target="esp.box.mode">
+                    <Option name="None" value="0"/>
+                    <Option name="Normal" value="1"/>
+                    <Option name="Corners" value="2"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="esp.box.corner-size.height" label="Corner height"
+                          tooltip="Height of box corners. Will only have an effect if 'Box mode' is set to 'corners'."
+                          min="1" max="50" step="1"/>
+            <AutoVariable width="fill" target="esp.box.corner-size.width" label="Corner width"
+                          tooltip="Width of box corners. Will only have an effect if 'Box mode' is set to 'corners'."
+                          min="1" max="50" step="1"/>
+            <LabeledObject width="fill" label="Health mode" tooltip="Sets the healthbar mode.">
+                <Select target="esp.health-bar">
+                    <Option name="None" value="0"/>
+                    <Option name="Top horizontal" value="1"/>
+                    <Option name="Bottom horizontal" value="2"/>
+                    <Option name="Vertical" value="3"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="esp.hide-invis" label="Hide invisible"/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Strings" x="330">
+        <List width="150">
+            <AutoVariable width="fill" target="esp.info.name" label="Name"/>
+            <AutoVariable width="fill" target="esp.info.health" label="Health"/>
+            <AutoVariable width="fill" target="esp.info.distance" label="Distance"/>
+            <AutoVariable width="fill" target="esp.info.buster-radius" label="Sentry Buster radius"
+                          tooltip="Will alert you if you're in the explosion radius of a Sentry Buster."/>
+            <AutoVariable width="fill" target="esp.info.class" label="Class"/>
+            <AutoVariable width="fill" target="esp.info.conditions" label="Conditions"/>
+            <AutoVariable width="fill" target="esp.info.ubercharge" label="UberCharge %"/>
+            <AutoVariable width="fill" target="esp.info.powerup" label="Powerup"/>
+            <AutoVariable width="fill" target="esp.info.weapon" label="Weapon"/>
+        </List>
+    </Box>
+</Tab>

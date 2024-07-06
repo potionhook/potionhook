@@ -1,0 +1,12 @@
+<Tab name="Label" padding="4 4 4 4">
+    <Box height="content" width="content" padding="12 6 6 6" name="Rosnehook">
+        <List width="200">
+            <AutoVariable width="fill" target="hack-info.enable" label="Enable Rosnehook label"
+                          tooltip="Toggles Rosnehook label."/>
+            <AutoVariable width="fill" target="hack-info.x" label="Label X Position" tooltip="x-position of hack info."/>
+            <AutoVariable width="fill" target="hack-info.y" label="Label Y Position" tooltip="x-position of hack info."/>
+            <AutoVariable width="fill" target="hack-info.background" label="Label Background Color" tooltip="Label background color."/>
+            <AutoVariable width="fill" target="hack-info.foreground" label="Label Foreground Color" tooltip="Label foreground color."/>
+        </List>
+    </Box>
+</Tab>

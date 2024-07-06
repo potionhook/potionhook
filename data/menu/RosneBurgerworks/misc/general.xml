@@ -1,0 +1,32 @@
+<Tab name="General" padding="4 4 4 4">
+    <Box height="content" width="content" padding="12 6 6 6" name="Collective">
+        <List width="155">
+            <AutoVariable width="fill" target="misc.auto-jump" label="Auto Bhop" tooltip="Automatically bunnyhop."/>
+            <AutoVariable width="fill" target="misc.auto-jump.chance" label="Auto jump chance"
+                          tooltip="% chance of a successful bunnyhop."/>
+            <LabeledObject width="fill" label="Auto strafe">
+                <Select target="misc.autostrafe">
+                    <Option name="Off" value="0"/>
+                    <Option name="Regular" value="1"/>
+                    <Option name="Multidir" value="2"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="misc.no-push" label="No push"/>
+            <AutoVariable width="fill" target="misc.anti-afk" label="Anti AFK"/>
+            <AutoVariable width="fill" target="misc.no-lerp" label="No lerp"/>
+            <AutoVariable width="fill" target="misc.animfix.enabled" label="Player Anim Fix"/>  
+            <AutoVariable width="fill" target="misc.roll-speedhack" label="Moonwalk"
+                          tooltip="Increase crouched movement speed."/>
+            <AutoVariable width="fill" target="misc.roll-speedhack.forward" label="Moonwalk forwards"/>
+            <AutoVariable width="fill" target="misc.show-spectators" label="Show spectators"/>
+        </List>
+    </Box>
+    <Box height="content" width="content" padding="12 6 6 6" name="Exploits" x="166">
+        <List width="205">
+            <AutoVariable width="fill" target="noisemaker-spam.enable" label="Infinite noisemaker spam"/>
+            <AutoVariable width="fill" target="misc.backpack-expander.enabled" label="Expand backpack"/>
+            <AutoVariable width="fill" target="misc.backpack-expander.slot-count" label="Backpack slots" min="1"
+                          max="3000"/>
+        </List>
+    </Box>
+</Tab>

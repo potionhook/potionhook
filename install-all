@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -e
+
+#
+sudo chmod +x ./scripts/updater
+sudo chmod +x ./scripts/migrations
+sudo chmod +x ./scripts/dependencycheck
+sudo chmod +x ./scripts/clang-format-all
+sudo chmod +x ./scripts/developer
+sudo chmod +x ./scripts/format
+# Build rosnehook
+#
+
+./scripts/updater false true true
+
+echo
+echo "./install-all completed!"
+echo

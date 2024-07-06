@@ -1,0 +1,7 @@
+<Tab name="Rosnebot">
+    <TabContainer width="fill" height="fill">
+        <Include path="RosneBurgerworks/rosnebot/general.xml"/>
+        <Include path="RosneBurgerworks/rosnebot/navbot.xml"/>
+        <Include path="RosneBurgerworks/rosnebot/autoitem.xml"/>
+    </TabContainer>
+</Tab>

@@ -1,0 +1,24 @@
+[submodule "libglez"]
+	path = external/libglez
+	url = https://github.com/melodyjkah/libglez
+[submodule "libxoverlay"]
+	path = external/libxoverlay
+	url = https://github.com/melodyjkah/libxoverlay
+[submodule "simple-ipc"]
+	path = external/simple-ipc
+	url = https://github.com/melodyjkah/simple-ipc
+[submodule "external/TF2_NavFile_Reader"]
+	path = external/TF2_NavFile_Reader
+	url = https://github.com/melodyjkah/TF2_NavFile_Reader
+[submodule "external/clip"]
+	path = external/clip
+	url = https://github.com/melodyjkah/clip
+[submodule "external/source-sdk-2013-headers"]
+	path = external/source-sdk-2013-headers
+	url = https://github.com/melodyjkah/source-sdk-2013-headers.git
+[submodule "external/boost-cmake"]
+	path = external/boost-cmake
+	url = https://github.com/melodyjkah/boost-cmake.git
+[submodule "external/MicroPather"]
+	path = external/MicroPather
+	url = https://github.com/explowz/MicroPather.git
