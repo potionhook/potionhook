@@ -1,0 +1,54 @@
+<Tab name="NavBot" padding="6 6 6 6">
+    <Box padding="12 6 6 6" width="content" height="content" name="NavBot">
+        <List width="150">
+            <AutoVariable width="fill" target="nav.enabled" label="Enable pathing"/>
+            <AutoVariable width="fill" target="nav.draw" label="Draw path"/>
+            <AutoVariable width="fill" target="nav.look-at-path" label="Look at path"/>
+            <AutoVariable width="fill" target="nav.look-at-path-legit" label="'Legit' look at path"
+                          tooltip="Replicates the OMEGATRONIC legit bots (random viewangles), made for legit bots."/>
+            <AutoVariable width="fill" target="navbot.enabled" label="Enable NavBot"/>
+            <AutoVariable width="fill" target="navbot.capture-objectives" label="Capture objectives"
+                          tooltip="Automatically capture objectives (CTF, CP, and PL only)."/>
+            <AutoVariable width="fill" target="navbot.defend-roam" label="Defend while roaming"/>
+            <AutoVariable width="fill" target="navbot.search-health" label="Search for health"/>
+            <AutoVariable width="fill" target="navbot.search-ammo" label="Search for ammo"/>
+            <AutoVariable width="fill" target="navbot.escape-danger" label="Escape danger"/>
+            <AutoVariable width="fill" target="navbot.escape-danger.slight-danger.capping" label="Safe capping"
+                          tooltip="Make bots run pre-emptively from capture points in case of danger."/>
+            <AutoVariable width="fill" target="navbot.escape-danger.ctf-cap" label="Escape danger w. intel"
+                          tooltip="Also try to escape from danger when carrying intel."/>
+            <AutoVariable width="fill" target="navbot.primary-only" label="Auto best weapon"/>
+            <AutoVariable width="fill" target="navbot.melee-mode" label="Melee only"/>
+            <AutoVariable width="fill" target="navbot.engineer-mode" label="Engi mode"/>
+            <LabeledObject width="fill" label="Force slot">
+                <Select target="navbot.force-slot">
+                    <Option name="Don't force" value="0"/>
+                    <Option name="Primary" value="1"/>
+                    <Option name="Secondary" value="2"/>
+                    <Option name="Melee" value="3"/>
+                    <Option name="PDA" value="4"/>
+                    <Option name="PDA2" value="5"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="navbot.snipe-sentries" label="Try to target sentries"/>
+            <AutoVariable width="fill" target="navbot.snipe-sentries.shortrange" label="Scout/Pyro sentry mode"
+                          tooltip="Try to target sentries as scout/pyro aswell. Usually not recommended."/>
+            <AutoVariable width="fill" target="navbot.stay-near" label="Stalk enemies"/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Misc" x="370">
+        <List width="150">
+            <AutoVariable width="fill" target="nav.stuck-time" label="Nav stuck time" tooltip="Time in milliseconds the bot is stuck until re-path"/>
+            <AutoVariable width="fill" target="nav.smooth-speed" label="Nav smoothen speed" tooltip="How smooth look at path is"/>
+            <AutoVariable width="fill" target="navbot.randomize-cpspot" label="Randomize spot on control point" tooltip="For KOTH and CP"/>
+            <AutoVariable width="fill" target="nav.vischeck-runtime.enabled" label="Nav vischeck"/>
+            <AutoVariable width="fill" target="nav.vischeck-cache.time" label="Nav visc time"/>
+            <AutoVariable width="fill" target="nav.crumb-tollerance" label="Nav crumb"/>
+            <AutoVariable width="fill" target="nav.vischeck-runtime.delay" label="Nav vischeck delay"/>
+            <AutoVariable width="fill" target="navbot.repath-time.delay" label="Nav repath delay"/>
+            <AutoVariable width="fill" target="nav.anti-stuck.detection-time" label="Nav stuck time" tooltip="Time in (x) Seconds The Bot Is Stuck Until Re-Path"/>
+            <AutoVariable width="fill" target="nav.anti-stuck.expire-time" label="Nav stuck time exp" tooltip="How long until accumulated Stuck time expires"/>
+            <AutoVariable width="fill" target="nav.anti-stuck.blacklist-time" label="Nav block stuck" tooltip="How long we should blacklist the node after being stuck for too long?"/>
+        </List>
+    </Box>
+</Tab>

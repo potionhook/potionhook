@@ -1,0 +1,5 @@
+#!/bin/bash
+\cp -rf ./data/ ../
+\cp -nr ./config_data/* ../data
+
+echo "./install for binary Rosnehook completed!"

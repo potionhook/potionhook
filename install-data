@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+[[ -n "$SUDO_USER" ]] && user=$SUDO_USER || user=$LOGNAME
+
+DATA_PATH=${1:-/opt/cathook/data}
+
+if ! [ -d "$DATA_PATH" ]; then
+  echo "Creating Rosnehook data directory at $DATA_PATH"
+  sudo mkdir -p "$DATA_PATH"
+  sudo chown -R "$user" "$DATA_PATH"
+  sudo chmod -R 774 "$DATA_PATH"
+fi
+
+echo "Installing Rosnehook data to $DATA_PATH"
+rsync -avh "data/" "$DATA_PATH"
+rsync -avh --ignore-existing "config_data/" "$DATA_PATH"
+sudo chown -R "$user" "$DATA_PATH"
+sudo chmod -R 774 "$DATA_PATH"
+
+echo
+echo "./install-data completed!"
+echo

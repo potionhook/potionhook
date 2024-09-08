@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+sudo chmod +x ./scripts/updater
+sudo chmod +x ./scripts/migrations
+sudo chmod +x ./scripts/dependencycheck
+sudo chmod +x ./scripts/clang-format-all
+sudo chmod +x ./scripts/developer
+sudo chmod +x ./scripts/format
+sudo chmod +x ./install-all
+sudo chmod +x ./install-data
+sudo chmod +x ./update
+sudo chmod +x ./install-all
+sudo chmod +x ./attach
+sudo chmod +x ./attach-gdb
+sudo chmod +x ./preload
+sudo chmod +x ./preload-gdb
+sudo chmod +x ./config
