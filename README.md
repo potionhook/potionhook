@@ -14,7 +14,7 @@ You need to do "chmod +x ./fix; ./fix" everytime you run update/instal-all
 
 ## Need support?
 
-Join the [Discord server](https://discord.gg/potion) or visit the [issues page](https://github.com/potionhook/potionhook/issues).
+Join the [Discord server](https://discord.gg/2UC8z9DXkh) or visit the [issues page](https://github.com/potionhook/potionhook/issues).
 
 ## Depencies
 
